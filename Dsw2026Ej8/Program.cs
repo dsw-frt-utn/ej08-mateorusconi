@@ -23,6 +23,21 @@
             var p3 = new Problema3();
             Console.WriteLine(p3.CompararCopias(5, new Product("Original")));
 
+
+            // ---------------------------------------------------
+
+            var p4 = new Problema4();
+            // Caso 1: Mezcla de nulos y válidos
+            Console.WriteLine(p4.CalcularPromedio(8, null, 10)); // (8+10)/2 = 9
+
+            // Caso 2: Todos nulos
+            Console.WriteLine(p4.CalcularPromedio(null, null, null)); // 0
+
+            // Caso 3: Valores fuera de rango (ignorados)
+            Console.WriteLine(p4.CalcularPromedio(5, 20, -2)); // 5/1 = 5
+
+            // Caso 4: Promedio con decimales
+            Console.WriteLine(p4.CalcularPromedio(7, 8, null)); // 7.5
         }
     }
 }
