@@ -20,6 +20,9 @@
 
             // ---------------------------------------------------
 
+            var p3 = new Problema3();
+            Console.WriteLine(p3.CompararCopias(5, new Product("Original")));
+
         }
     }
 }
