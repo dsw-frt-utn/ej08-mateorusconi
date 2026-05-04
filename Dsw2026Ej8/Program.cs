@@ -38,6 +38,23 @@
 
             // Caso 4: Promedio con decimales
             Console.WriteLine(p4.CalcularPromedio(7, 8, null)); // 7.5
+
+            var p5 = new Problema5();
+
+            RetailSale r = new RetailSale();
+            r.Amount = 1000m;
+
+            Wholesale w = new Wholesale();
+            w.Amount = 1000m;
+
+            // polimorfismo: Sale como tipo base
+            Sale venta1 = r;
+            Sale venta2 = w;
+
+            Console.WriteLine(p5.ObtenerImporteFinal(venta1)); // → 1000
+            Console.WriteLine(p5.ObtenerImporteFinal(venta2));// → 900
+
+
         }
     }
 }
